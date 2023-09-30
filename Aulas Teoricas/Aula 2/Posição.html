@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div.static{
+            position: static;
+            border: 3px solid #3f21ad;
+        }
+        div.relative{
+            position: relative;
+            right: 30px;
+            border: 3px solid #3f21ad;
+        }
+        div.fixed{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #3f21ad;
+        }
+        div.absolute{
+            position: absolute;
+            right: 0px;
+            width: 200px;
+            height: 80px;
+            border: 3px solid #3f21ad;   
+        }
+    </style>
+</head>
+<body>
+    <h2>Posição: estática</h2>
+    <p>Um elemento com posição: estático; é sempre posicionado de acordo com o fluxo normal da página:</p>
+    <div class="static">
+        Aqui- position: static;
+    </div>
+    <h2>posição: relativa;</h2>
+    <p>Um elemento com posição: relativa;está posicionado em relação à sua posição normal:</p>
+    <div class="relative">
+        Aqui-position: relative;
+    </div>
+    <h2>position: absolute;</h2>
+    <p>posição fixa em relação a pagina</p>    
+    <div class="absolute">
+        Aqui posição absoluta
+    </div>
+    <div class="fixed">
+        essa div tem posição fixa       
+    </div>
+</body>
+</html>
