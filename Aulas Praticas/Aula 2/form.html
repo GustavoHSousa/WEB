@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" method="post">
+        <br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50">
+        <br><br><br>
+        <label for="senha">Senha:</label>
+        <input type="text" type="password" name="senha" size="8" maxlength="8">
+        <br><br><br>
+        <fieldset>
+            <label for="Linguagem">Linguagem que tem interesse</label>
+            <br><br>
+            <input type="checkbox" name="linguagem[]" value="c++">C++
+            <input type="checkbox" name="linguagem[]" value="php">Php
+            <input type="checkbox" name="linguagem[]" value="delph">Delph
+        </fieldset>
+        <br>
+        <label for="linguagemescolhida">Linguagem que irá cursar agora</label>
+        <br><br>
+        <input type="radio" name="curso" value="c++">C++
+        <input type="radio" name="curso" value="php">Php
+        <input type="radio" name="curso" value="c++">Delph
+        <br><br><br>
+        <fieldset>
+        <label for="curso">Cursos que já fez</label>
+        <br><br><br>
+        <select name="escola">
+            <option value="c++">C++Builder</option>
+            <option value="php">Php</option>
+            <option value="delph">Delph</option>
+        </select>
+        </fieldset>
+        <br><br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
