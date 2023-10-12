@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .row::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 15px; 
+
+        }
+        html{
+            font-family:'Lucida Sans', sans-serif ;
+        }
+        header{
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+        }
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li{
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: lightseagreen;
+            color: white;
+            box-shadow:0 1px 3px black, black ;
+        }
+        .menu li:hover{
+            background-color: blue;
+        }
+        aside{
+            background-color: blue;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px black, black; 
+        }
+        .footer{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+        .col-1{width:8.33% ;}
+        .col-2{width:16.66% ;}
+        .col-3{width:25%;}
+        .col-4{width:33.33% ;}
+        .col-5{width:41.66% ;}
+        .col-6{width:50% ;}
+        .col-7{width:58.%33 ;}
+        .col-8{width:66.66% ;}
+        .col-9{width:75% ;}
+        .col-10{width:83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        @media only screen and (max-width: 768px){
+            [class*=".col-"]{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Curitiba</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Cidade</li>
+                <li>Parques</li>
+                <li>Museuos</li>
+                <li>Cidades Vizinhas</li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <h1>A cidade</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum ab vitae, exercitationem magnam architecto doloribus mollitia numquam hic ut quidem voluptate optio totam harum perferendis delectus? Iure molestiae inventore blanditiis aliquam corrupti placeat accusamus quae explicabo aliquid nulla veritatis non quod ullam illo distinctio temporibus, facere quia tempore dolorum adipisci excepturi cum? Ut, voluptates. Nemo nam tenetur ipsum quos, nesciunt ad magni consequuntur maiores possimus quam ipsa molestiae rerum temporibus harum! Laudantium modi pariatur aut assumenda facilis maxime magni nihil quo, at dolorum? Odio nemo dolore nulla sed esse velit eum amet nostrum ipsam. Molestias veritatis, placeat labore pariatur vitae excepturi debitis blanditiis, earum quo delectus assumenda et repellendus eum consectetur! Et aperiam eligendi quis dolore voluptatibus mollitia doloremque dolorem perferendis error. Nulla molestiae accusamus architecto, quod, fuga earum voluptatem sequi velit, facere debitis repellendus provident? Quisquam fuga molestias et iste delectus mollitia earum, esse expedita animi, tenetur, hic ut.</p>
+        </div>
+        <div class="col-3">
+            <div class="aside">
+                <h2>Hoteis</h2>
+                <p>Estrelas.</p>
+                <h2>Localização</h2>
+                <p>Localização</p>
+                <h2>Restaurantes</h2>
+                <p>Chefes premiados.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Finds educacionais</p>
+    </div>
+</body>
+</html>
